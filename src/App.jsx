@@ -23,7 +23,8 @@ function App() {
                     d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z" />
                 </svg>
 
-                <span className="ml-2">1985 Kerry Way, Whittier, CA, USA</span>
+                <span className="ml-2"></span>
+                <span className="ml-2">Talk to Expert Gary: </span>
               </div>
             </li>
             <li className="ml-6">
@@ -33,7 +34,7 @@ function App() {
                     d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z" />
                 </svg>
 
-                <span className="ml-2">+1 562-789-1935</span>
+                <span className="ml-2">+61 415-512-800</span>
               </div>
             </li>
           </ul>
@@ -88,7 +89,7 @@ function App() {
       <div className="flex flex-wrap items-center justify-between py-6">
         <div className="w-1/2 md:w-auto">
           <a href="index.html" className="text-white font-bold text-2xl">
-            DentalPro
+          {/* PERGOLAS & PATIOS */}
           </a>
         </div>
 
@@ -104,19 +105,19 @@ function App() {
           <nav
             className="w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
             <ul className="md:flex items-center">
-              <li><a className="py-2 inline-block md:text-white md:hidden lg:block font-semibold" href="#">About Us</a></li>
+              <li><a className="py-2 inline-block md:text-white md:hidden lg:block font-semibold"
+                  href="#">About Us</a></li>
               <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                  href="#">Treatments</a></li>
-              <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                  href="#">Testimonials</a></li>
+                  href="#">Gallery</a></li>
+              {/* <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold"
+                  href="#">Contact</a></li>
               <li className="md:ml-4 md:hidden lg:block"><a className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                  href="#">Blog</a></li>
+                  href="#">Blog</a></li> */}
               <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold" href="#">Contact
                   Us</a></li>
               <li className="md:ml-6 mt-3 md:mt-0">
                 <a className="inline-block font-semibold px-4 py-2 text-white bg-blue-600 md:bg-transparent md:text-white border border-white rounded"
-                  href="book-appointment.html">Book
-                  Appointment</a>
+                  href="book-appointment.html">+61 415-512-800 </a>
               </li>
             </ul>
           </nav>
@@ -126,22 +127,16 @@ function App() {
 
    
     <div className="bg-gray-100">
-      <section className="cover bg-blue-teal-gradient relative bg-blue-600 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
+      <section className="cover bg-gray-teal-gradient relative bg-gray-600 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
       items-center min-h-screen">
         <div className="h-full absolute top-0 left-0 z-0">
-          <img src="images/cover-bg.jpg" alt="" className="w-full h-full object-cover opacity-20"/>
+          <img src="images/13.jpg" alt="" className="w-full h-full object-cover opacity-20"/>
         </div>
 
         <div className="lg:w-3/4 xl:w-2/4 relative z-10 h-100 lg:mt-16">
           <div>
-            <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">A better life starts with a
-              beautiful
-              smile.</h1>
-            <p className="text-blue-100 text-xl md:text-2xl leading-snug mt-4">Welcome to the Dentist Office of Dr. Thomas
-              Dooley,
-              where
-              trust
-              and comfort are priorities.</p>
+            <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">PERGOLAS & PATIOS</h1>
+            <p className="text-blue-100 text-xl md:text-2xl leading-snug mt-4">Our price are affordable and all our product are Australian made. We offer a range of pergolas and carport and decks expand your possibilities for entertaining, relaxing, storage or simply, enjoying your garden, and protects you and your property from the elements. </p>
             <a href="#" className="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold">Book
               Appointment</a>
           </div>
@@ -153,11 +148,10 @@ function App() {
     <section className="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32">
       <div className="flex flex-col lg:flex-row lg:-mx-8">
         <div className="w-full lg:w-1/2 lg:px-8">
-          <h2 className="text-3xl leading-tight font-bold mt-4">Welcome to the Dentist Office of Dr. Thomas Dooley</h2>
-          <p className="text-lg mt-4 font-semibold">Excellence in Dentistry in the Heart of NY</p>
-          <p className="mt-2 leading-relaxed">Donec convallis sollicitudin facilisis. Integer nisl ligula, accumsan non
-            tincidunt ac, imperdiet in enim.
-            Donec efficitur ullamcorper metus, eu venenatis nunc. Nam eget neque tempus, mollis sem a, faucibus mi.</p>
+          <h2 className="text-3xl leading-tight font-bold mt-4">15 year warranty on all workmanship.
+          </h2>
+          <p className="text-lg mt-4 font-semibold">We specialise in all roofing styles including flat, gable or dome using 100% Australian made materials.</p>
+          <p className="mt-2 leading-relaxed">  Very competitive pricing with reliable and friendly service.</p>
         </div>
 
         <div className="w-full lg:w-1/2 lg:px-8 mt-12 lg:mt-0">
@@ -166,10 +160,9 @@ function App() {
               <div className="w-16 h-16 bg-blue-600 rounded-full"></div>
             </div>
             <div className="md:ml-8 mt-4 md:mt-0">
-              <h4 className="text-xl font-bold leading-tight">Everything You Need Under One Roof</h4>
-              <p className="mt-2 leading-relaxed">Our comprehensive services allow you to receive all needed dental care
-                right here in our state-of-art
-                office – from dental cleanings and fillings to dental implants and extractions.</p>
+              <h4 className="text-xl font-bold leading-tight">We are qualified, licensed and insured traders
+              </h4>
+              <p className="mt-2 leading-relaxed">Do you Need a cover to protect your car and house frome the heat and the rain? We are here to design and build you all types of pergolas and carport with very cheep prices.</p>
             </div>
           </div>
 
@@ -178,11 +171,8 @@ function App() {
               <div className="w-16 h-16 bg-blue-600 rounded-full"></div>
             </div>
             <div className="md:ml-8 mt-4 md:mt-0">
-              <h4 className="text-xl font-bold leading-tight">Our Patient-Focused Approach</h4>
-              <p className="mt-2 leading-relaxed">Your treatment plan will perfectly match your needs, lifestyle, and goals.
-                Even if it’s been years
-                since you last visited the dentist, we can help. Our comfortable office, compassionate team, and
-                minimally-invasive treatments will help you feel completely at ease.</p>
+              <h4 className="text-xl font-bold leading-tight">Having been in business since 2009 and with over 15,000 satisfied customers. </h4>
+              <p className="mt-2 leading-relaxed">Our team is available now to help design and discuss your space. Supported by a team of specialist professionals, you can rest assured your job will be designed and built within time and on budget from the design through to completion. </p>
             </div>
           </div>
         </div>
@@ -191,48 +181,48 @@ function App() {
       <div className="md:flex md:flex-wrap mt-24 text-center md:-mx-4">
         <div className="md:w-1/2 md:px-4 lg:w-1/4">
           <div className="bg-white rounded-lg border border-gray-300 p-8">
-            <img src="images/teeth-whitening.svg" alt="" className="h-20 mx-auto"/>
+            <img src="images/1.jpg" alt="" className="h-20 mx-auto"/>
 
-            <h4 className="text-xl font-bold mt-4">Teeth Whitening</h4>
-            <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a>
+            <h4 className="text-xl font-bold mt-4">Insulated Panel Roof</h4>
+            {/* <p className="mt-1">Let us show you how our experience.</p>
+            <a href="#" className="block mt-4">Read More</a> */}
           </div>
         </div>
 
         <div className="md:w-1/2 md:px-4 mt-4 md:mt-0 lg:w-1/4">
           <div className="bg-white rounded-lg border border-gray-300 p-8">
-            <img src="images/oral-surgery.svg" alt="" className="h-20 mx-auto"/>
+            <img src="images/2.jpg" alt="" className="h-20 mx-auto"/>
 
-            <h4 className="text-xl font-bold mt-4">Oral Surgery</h4>
-            <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a>
+            <h4 className="text-xl font-bold mt-4">Colourbond Roof</h4>
+            {/* <p className="mt-1">Let us show you how our experience.</p>
+            <a href="#" className="block mt-4">Read More</a> */}
           </div>
         </div>
 
         <div className="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
           <div className="bg-white rounded-lg border border-gray-300 p-8">
-            <img src="images/painless-dentistry.svg" alt="" className="h-20 mx-auto"/>
+            <img src="images/3.jpg" alt="" className="h-20 mx-auto"/>
 
-            <h4 className="text-xl font-bold mt-4">Painless Dentistry</h4>
-            <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a>
+            <h4 className="text-xl font-bold mt-4">Curved Roof</h4>
+            {/* <p className="mt-1">Let us show you how our experience.</p>
+            <a href="#" className="block mt-4">Read More</a> */}
           </div>
         </div>
 
         <div className="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
           <div className="bg-white rounded-lg border border-gray-300 p-8">
-            <img src="images/periodontics.svg" alt="" className="h-20 mx-auto"/>
+            <img src="images/4.jpg" alt="" className="h-20 mx-auto"/>
 
-            <h4 className="text-xl font-bold mt-4">Periodontics</h4>
-            <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a>
+            <h4 className="text-xl font-bold mt-4">Sunroom / Decking</h4>
+            {/* <p className="mt-1">Let us show you how our experience.</p>
+            <a href="#" className="block mt-4">Read More</a> */}
           </div>
         </div>
       </div>
     </section>
 
 
-
+{/* 
     <section className="relative bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-16 lg:py-32">
       <div className="flex flex-col lg:flex-row lg:-mx-8">
         <div className="w-full lg:w-1/2 lg:px-8">
@@ -251,7 +241,7 @@ function App() {
         </div>
       </div>
     </section>
-
+ */}
 
 
 
