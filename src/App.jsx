@@ -1,66 +1,9 @@
 import { useState } from 'react'
+import ImageCarousel from './ImageCarousel';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-
-const images = [
-
-  {
-    url: "/1.jpg",
-    /*https://lh3.googleusercontent.com/p/AF1QipM5YMhkKaEx1Xpq4SJU8ig81cqIePiKd1f37-W5=s680-w680-h510 */
-    title: "ET",
-    description: "Excellent service from start to finish. We had Gary do a pergola and carport for us recently. We are very pleased with Gary’s work. He is very honest and trustworthy and I would not hesitate to recommend him to others. Thanks Gary!",
-  },
-  {
-    url: "/2.jpg",
-    /*https://lh3.googleusercontent.com/p/AF1QipOm-AR_kve7ago1eqwJWo5bPfJr2PnVJfv02JIt=s680-w680-h510 */
-    title: "Will Li",
-    description: "My wife and I couldn't be happier with the carport Gary and his dad built for us. Gary really went the extra mile, even helping us chop down a bunch of tree branches to fit the carport, and he didn't charge us anything extra for it. Talking to Gary is super easy because he's not just a nice guy, he's genuinely caring. He's very skilled and professional, and his prices are very reasonable. We'd recommend him in a heartbeat!",
-  },
-  {
-    url: "/3.jpg",
-     /*https://lh3.googleusercontent.com/p/AF1QipNWCCcAOFNUMfiP2eacJgs8CTVLkCNy68QrMNkc=s680-w680-h510 */
-    title: "Michelle Mansueto",
-    description: "I was very impressed with garys work. My pergola looks great and very professionally sone",
-  },
-  {
-    url: "/4.jpg",
-     /*https://lh3.googleusercontent.com/p/AF1QipMgNcFUVD_AQAH2561OXWXLWNkRUYAQINScmckN=s680-w680-h510 */
-    title: "Shamsheer Verma",
-    description: "Recently Gary worked on our property in Ingleburn to build patio and full glass sunroom. He has done an amazing job and quality workmanship based all in spot on pricing. He is quite accomodating to requests and humble in providing in suggestions that will improve the overall outlook and design of sunroom.",
-  },
-  {
-    url: "/5.jpeg",
-     /*https://lh3.googleusercontent.com/p/AF1QipPQHq7wBW98ideYUFB0UMKBJb_SGwlaVboTA3rD=s680-w680-h510 */
-    title: "Gary naji",
-    description: "Worked by Gary",
-  },
-  {
-    url: "/6.jpg",
-     /* https://lh3.googleusercontent.com/p/AF1QipP7h2TJEihv3gLU8G_WEOb9OlKkChE6snfRpTc=s680-w680-h510*/
-    title: "Thanh Truong-Do",
-    description: "Gary helped us to build a composite deck and insulated pergola. The results turned out amazing due to his attention to detail. He supported us along the process and even jumped up on the roof and gave us a few recommendations. A+ customer experience and he went above and beyond. Definitely recommending him to family and friends.",
-  },
-  {
-    url: "/7.jpg",
-     /* https://lh3.googleusercontent.com/p/AF1QipMMIul3wCWgQ5mP7Y8F8QBgMzDvjfBJJbiKIg8s=s680-w680-h510*/
-    title: " P Panico",
-    description: "Garry did a fantastic job to extend our existing Stratco pergola. He cares a lot about his work and the customer and is very good tradesman. Fair price too. I would happily recommend Garry to anyone. Thank you again, Regards Paul",
-  },
-  {
-    url: "/8.jpg",
-     /*https://lh3.googleusercontent.com/p/AF1QipOgYeMg6ktZ7BLpULIkCppwygfv7QpxMXCIkbw7=s680-w680-h510 */
-    title: "Ganesh Radhakrishnan",
-    description: "Gary did an extended car port for my place. He was professional, clear and trustworthy. I found the quote from him as nominal. Highly recommend his company for this kind of work.",
-  },
-  {
-    url: "/9.jpg",
-     /*https://lh3.googleusercontent.com/p/AF1QipNjZlkzvGT2kEd0H0ox2DUtczWUXIUZlu8n9uWT=s680-w680-h510 */
-    title: "Anm Rahman",
-    description: "Image by Customer.",
-  },
-];
 
 
 function App() {
@@ -163,21 +106,17 @@ function App() {
 
         <div className="hidden md:block w-full md:w-auto" id="menu">
           <nav
-            className="w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
+            className="w-full bg-slate-300 md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
             <ul className="md:flex items-center">
               <li><a className="py-2 inline-block md:text-white md:hidden lg:block font-semibold"
-                  href="#">About Us</a></li>
+                  href="#about">About Us</a></li>
               <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                  href="#">Gallery</a></li>
-              {/* <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                  href="#">Contact</a></li>
-              <li className="md:ml-4 md:hidden lg:block"><a className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                  href="#">Blog</a></li> */}
-              <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold" href="#">Contact
+                  href="#gallery">Gallery</a></li>
+              <li className="md:ml-4"><a className="py-2 inline-block md:text-white md:px-2 font-semibold" href="#contact">Contact
                   Us</a></li>
               <li className="md:ml-6 mt-3 md:mt-0">
                 <a className="inline-block font-semibold px-4 py-2 text-white bg-blue-600 md:bg-transparent md:text-white border border-white rounded"
-                  href="book-appointment.html">+61 415-512-800 </a>
+                  href="book-appointment.html"> +61 415-512-800 </a>
               </li>
             </ul>
           </nav>
@@ -186,8 +125,8 @@ function App() {
     </header>
 
    
-    <div className="bg-gray-100">
-      <section className="cover bg-gray-teal-gradient relative bg-gray-600 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
+    <div className="">
+      <section className="cover bg-gradient-to-r from-gray-950 to-gray-600  relative  px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
       items-center min-h-screen">
         <div className="h-full absolute top-0 left-0 z-0">
           <img src="images/13.jpg" alt="" className="w-full h-full object-cover opacity-20"/>
@@ -197,15 +136,15 @@ function App() {
           <div>
             <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">PERGOLAS & PATIOS</h1>
             <p className="text-blue-100 text-xl md:text-2xl leading-snug mt-4">Our price are affordable and all our product are Australian made. We offer a range of pergolas and carport and decks expand your possibilities for entertaining, relaxing, storage or simply, enjoying your garden, and protects you and your property from the elements. </p>
-            <a href="#" className="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold">Book
+            <a href="https://web.whatsapp.com/send?phone=61415512800" className="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold">Book
               Appointment</a>
           </div>
         </div>
       </section>
     </div>
 
-
-    <section className="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32">
+   
+    <section id="about" className="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32" >
       <div className="flex flex-col lg:flex-row lg:-mx-8">
         <div className="w-full lg:w-1/2 lg:px-8">
           <h2 className="text-3xl leading-tight font-bold mt-4">15 year warranty on all workmanship.
@@ -217,7 +156,7 @@ function App() {
         <div className="w-full lg:w-1/2 lg:px-8 mt-12 lg:mt-0">
           <div className="md:flex">
             <div>
-              <div className="w-16 h-16 bg-blue-600 rounded-full"></div>
+              <div className="w-16 h-16 bg-slate-200 rounded-full"></div>
             </div>
             <div className="md:ml-8 mt-4 md:mt-0">
               <h4 className="text-xl font-bold leading-tight">We are qualified, licensed and insured traders
@@ -228,7 +167,7 @@ function App() {
 
           <div className="md:flex mt-8">
             <div>
-              <div className="w-16 h-16 bg-blue-600 rounded-full"></div>
+              <div className="w-16 h-16 bg-slate-200 rounded-full"></div>
             </div>
             <div className="md:ml-8 mt-4 md:mt-0">
               <h4 className="text-xl font-bold leading-tight">Having been in business since 2009 and with over 15,000 satisfied customers. </h4>
@@ -244,8 +183,8 @@ function App() {
             <img src="images/insulated.png" alt="" className="h-20 mx-auto"/>
 
             <h4 className="text-xl font-bold mt-4">Insulated Panel Roof</h4>
-            {/* <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a> */}
+            <p className="mt-1">Let us show you how our experience.</p>
+            {/* <a href="#" className="block mt-4">Read More</a>  */}
           </div>
         </div>
 
@@ -254,8 +193,8 @@ function App() {
             <img src="images/colorbond.jfif" alt="" className="h-20 mx-auto"/>
 
             <h4 className="text-xl font-bold mt-4">Colourbond Roof</h4>
-            {/* <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a> */}
+            <p className="mt-1">Let us show you how our experience in Colour bond Roof.</p>
+            {/*  <a href="#" className="block mt-4">Read More</a> */}
           </div>
         </div>
 
@@ -264,8 +203,8 @@ function App() {
             <img src="images/curve.jfif" alt="" className="h-20 mx-auto"/>
 
             <h4 className="text-xl font-bold mt-4">Curved Roof</h4>
-            {/* <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a> */}
+             <p className="mt-1">Let us show you how our experience in Curved Rood.</p>
+            {/* <a href="#" className="block mt-4">Read More</a> */}
           </div>
         </div>
 
@@ -274,191 +213,120 @@ function App() {
             <img src="images/sunroom.jpg" alt="" className="h-20 mx-auto"/>
 
             <h4 className="text-xl font-bold mt-4">Sunroom / Decking</h4>
-            {/* <p className="mt-1">Let us show you how our experience.</p>
-            <a href="#" className="block mt-4">Read More</a> */}
+             <p className="mt-1">Let us show you how our experience.</p>
+           {/* <a href="#" className="block mt-4">Read More</a> */}
           </div>
         </div>
       </div>
     </section>
 
 
-{/* 
-    <section className="relative bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-16 lg:py-32">
-      <div className="flex flex-col lg:flex-row lg:-mx-8">
-        <div className="w-full lg:w-1/2 lg:px-8">
-          <h2 className="text-3xl leading-tight font-bold mt-4">Why choose the Mesothelioma Center?</h2>
-          <p className="mt-2 leading-relaxed">Aenean ut tellus tellus. Suspendisse potenti. Nullam tincidunt lacus tellus,
-            sed aliquam est vehicula a. Pellentesque consectetur condimentum nulla, eleifend condimentum purus vehicula
-            in. Donec convallis sollicitudin facilisis. Integer nisl ligula, accumsan non tincidunt ac, imperdiet in
-            enim. Donec efficitur ullamcorper metus, eu venenatis nunc. Nam eget neque tempus, mollis sem a, faucibus
-            mi.</p>
-        </div>
+      <section id="gallery" className="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
+    <div className="">
+      <h2 className="text-3xl leading-tight font-bold">Gallery</h2>
+      <p className="text-gray-600 mt-2 md:max-w-lg">You’ll be absolutely amazed at the difference we will make to your lifestyle by turning your unused outdoor space into a useable and functional area that your family can use every day.</p>
+      <a href="#" title="" className="inline-block text-teal-500 font-semibold mt-6 mt:md-0">Book Appointment</a>
+    </div>
 
-        <div className="w-full md:max-w-md md:mx-auto lg:w-1/2 lg:px-8 mt-12 mt:md-0">
-          <div className="bg-gray-400 w-full h-72 rounded-lg"></div>
-
-          <p className="italic text-sm mt-2 text-center">Aenean ante nisi, gravida non mattis semper.</p>
+    <div className="md:flex mt-12 md:-mx-4">
+      <div className="md:px-4 md:w-1/2 xl:w-1/4">
+        <div className="bg-white rounded border border-gray-300">
+          <div className="w-full h-64 md:h-80 overflow-hidden bg-gray-300">
+            <img src="images/1.jpg" alt="sunroof" className="w-full h-full object-cover" />
+          </div>
+          <div className="p-4">
+            <div className="flex items-center text-sm">
+              <span className="text-teal-500 font-semibold">Customer</span>
+              <span className="ml-4 text-gray-600"> </span>
+            </div>
+            <p className="text-lg font-semibold leading-tight mt-4">Sun Roof</p>
+            <p className="text-gray-600 mt-1">Excellent service from start to finish. We had Gary do a pergola and carport for us recently. We are very pleased with Gary’s work. He is very honest and trustworthy and I would not hesitate to recommend him to others. Thanks Gary!</p>
+            <div className="flex items-center mt-4">
+              <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
+              <div className="ml-4">
+                <p className="text-gray-600">By <span className="text-gray-900 font-semibold">ET</span></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
- */}
 
-
-
-    <section className="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
-      <div className="">
-        <h2 className="text-3xl leading-tight font-bold">Gallery</h2>
-        <p className="text-gray-600 mt-2 md:max-w-lg">You’ll be absolutely amazed at the difference we will make to your lifestyle by turning your unused outdoor space into a useable and functional area that your family can use every day.</p>
-
-        <a href="#" title="" className="inline-block text-teal-500 font-semibold mt-6 mt:md-0">Book Appointment</a>
+      <div className="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
+        <div className="bg-white rounded border border-gray-300 ">
+          <div className="w-full h-64 md:h-80 overflow-hidden bg-gray-300">
+            <img src="images/2.jpg" alt="stylish" className="w-full h-full object-cover" />
+          </div>
+          <div className="p-4">
+            <div className="flex items-center text-sm">
+              <span className="text-teal-500 font-semibold">Customer</span>
+              <span className="ml-4 text-gray-600"> </span>
+            </div>
+            <p className="text-lg font-semibold leading-tight mt-4">Insulated Roof</p>
+            <p className="text-gray-600 mt-1">Gary really went the extra mile, even helping us chop down a bunch of tree branches to fit the carport, and he didn't charge us anything extra for it.  He's very skilled and professional, and his prices are very reasonable.</p>
+            <div className="flex items-center mt-4">
+              <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
+              <div className="ml-4">
+                <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Will Li</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-
-      <div className="md:flex mt-12 md:-mx-4">
-        <div className="md:px-4 md:w-1/2 xl:w-1/4">
-          <div className="bg-white rounded border border-gray-300">
-            <div className="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/1.jpg" alt="sunroof" className="social-icon" />
+      <div className="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
+        <div className="bg-white rounded border border-gray-300 ">
+          <div className="w-full h-64 md:h-80 overflow-hidden bg-gray-300">
+            <img src="images/3.jpg" alt="stylish" className="w-full h-full object-cover" />
+          </div>
+          <div className="p-4">
+            <div className="flex items-center text-sm">
+              <span className="text-teal-500 font-semibold">Customer</span>
+              <span className="ml-4 text-gray-600"> </span>
             </div>
-            <div className="p-4">
-              <div className="flex items-center text-sm">
-                <span className="text-teal-500 font-semibold">Customer</span>
-                <span className="ml-4 text-gray-600"> </span>
-              </div>
-              <p className="text-lg font-semibold leading-tight mt-4">Sun Roof</p>
-              <p className="text-gray-600 mt-1">Excellent service from start to finish. We had Gary do a pergola and carport for us recently. We are very pleased with Gary’s work. He is very honest and trustworthy and I would not hesitate to recommend him to others. Thanks Gary!
-              </p>
-              <div className="flex items-center mt-4">
-                <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-                <div className="ml-4">
-                  <p className="text-gray-600">By <span className="text-gray-900 font-semibold">ET</span></p>
-                </div>
+            <p className="text-lg font-semibold leading-tight mt-4">Roof</p>
+            <p className="text-gray-600 mt-1">I was very impressed with garys work. My pergola looks great and very professionally done. He's very skilled and professional, and his prices are very reasonable. We'd recommend him in a heartbeat!</p>
+            <div className="flex items-center mt-4">
+              <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
+              <div className="ml-4">
+                <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Michelle Mansueto</span></p>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
-          <div className="bg-white rounded border border-gray-300 ">
-            <div className="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/2.jpg" alt="stylish" className="social-icon" />
-            </div>
-            <div className="p-4">
-              <div className="flex items-center text-sm">
-                <span className="text-teal-500 font-semibold">Customer</span>
-                <span className="ml-4 text-gray-600"> </span>
-              </div>
-              <p className="text-lg font-semibold leading-tight mt-4">Insulated Roof</p>
-              <p className="text-gray-600 mt-1">Gary really went the extra mile, even helping us chop down a bunch of tree branches to fit the carport, and he didn't charge us anything extra for it.  He's very skilled and professional, and his prices are very reasonable. 
-              </p>
-              <div className="flex items-center mt-4">
-                <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-                <div className="ml-4">
-                  <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Will Li</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div className="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
-          <div className="bg-white rounded border border-gray-300 ">
-            <div className="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/3.jpg" alt="stylish" className="social-icon" />
-            </div>
-            <div className="p-4">
-              <div className="flex items-center text-sm">
-                <span className="text-teal-500 font-semibold">Customer</span>
-                <span className="ml-4 text-gray-600"> </span>
-              </div>
-              <p className="text-lg font-semibold leading-tight mt-4">Roof</p>
-              <p className="text-gray-600 mt-1">I was very impressed with garys work. My pergola looks great and very professionally done. He's very skilled and professional, and his prices are very reasonable. We'd recommend him in a heartbeat! 
-              </p>
-              <div className="flex items-center mt-4">
-                <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-                <div className="ml-4">
-                  <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Michelle Mansueto</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div className="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
-          <div className="bg-white rounded border border-gray-300 ">
-            <div className="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/4.jpg" alt="stylish" className="social-icon" />
-            </div>
-            <div className="p-4">
-              <div className="flex items-center text-sm">
-                <span className="text-teal-500 font-semibold">Customer</span>
-                <span className="ml-4 text-gray-600"> </span>
-              </div>
-              <p className="text-lg font-semibold leading-tight mt-4">Insulated Roof</p>
-              <p className="text-gray-600 mt-1">Recently Gary worked on our property in Ingleburn to build patio and full glass sunroom. He has done an amazing job and quality workmanship. He is quite accomodating and humble in providing in suggestions.
-              </p>
-              <div className="flex items-center mt-4">
-                <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-                <div className="ml-4">
-                  <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Shamsheer Verma</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      {/* <div className="md:flex mt-12 md:-mx-4">
-        <div className="md:px-4 md:w-1/2 xl:w-1/4">
-          <div className="bg-white rounded border border-gray-300">
-            <div className="w-full h-48 overflow-hidden bg-gray-300"></div>
-            <div className="p-4">
-              <div className="flex items-center text-sm">
-                <span className="text-teal-500 font-semibold">Business</span>
-                <span className="ml-4 text-gray-600">29 Nov, 2019</span>
-              </div>
-              <p className="text-lg font-semibold leading-tight mt-4">Card Title</p>
-              <p className="text-gray-600 mt-1">This card has supporting text below as a natural lead-in to additional content.
-              </p>
-              <div className="flex items-center mt-4">
-                <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-                <div className="ml-4">
-                  <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Abby Sims</span></p>
-                </div>
+      <div className="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
+        <div className="bg-white rounded border border-gray-300 ">
+          <div className="w-full h-64 md:h-80 overflow-hidden bg-gray-300">
+            <img src="images/4.jpg" alt="stylish" className="w-full h-full object-cover" />
+          </div>
+          <div className="p-4">
+            <div className="flex items-center text-sm">
+              <span className="text-teal-500 font-semibold">Customer</span>
+              <span className="ml-4 text-gray-600"> </span>
+            </div>
+            <p className="text-lg font-semibold leading-tight mt-4">Insulated Roof</p>
+            <p className="text-gray-600 mt-1">Recently Gary worked on our property in Ingleburn to build patio and full glass sunroom. He has done an amazing job and quality workmanship. He is quite accomodating and humble in providing in suggestions.</p>
+            <div className="flex items-center mt-4">
+              <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
+              <div className="ml-4">
+                <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Shamsheer Verma</span></p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
-          <div className="bg-white rounded border border-gray-300 ">
-            <div className="w-full h-48 overflow-hidden bg-gray-300"></div>
-            <div className="p-4">
-              <div className="flex items-center text-sm">
-                <span className="text-teal-500 font-semibold">Business</span>
-                <span className="ml-4 text-gray-600">29 Nov, 2019</span>
-              </div>
-              <p className="text-lg font-semibold leading-tight mt-4">Card Title</p>
-              <p className="text-gray-600 mt-1">This card has supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <div className="flex items-center mt-4">
-                <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-                <div className="ml-4">
-                  <p className="text-gray-600">By <span className="text-gray-900 font-semibold">Abby Sims</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+    </div>
+  </section>
+
+
+
+    <section>
+        <ImageCarousel/>
     </section>
 
-
-    <footer className="relative bg-gray-900 text-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 lg:py-24">
+    <footer id="contact" className="relative bg-gray-900 text-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 lg:py-24">
     <div className="flex flex-col items-center">
         <div className="w-full md:w-1/4 lg:w-1/3 mt-8 lg:mt-0 lg:pr-8 text-center">
             <h5 className="uppercase tracking-wider font-semibold text-gray-500">Contact Details</h5>
@@ -470,13 +338,13 @@ function App() {
                                 <path d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z"/>
                             </svg>
                         </span>
-                        <span className="ml-3">6 Humphreys Ave, Casula NSW 2170, Australia.</span>
+                        <span className="ml-3">6 Humphreys Ave, Casula NSW 2170</span>
                     </a>
                 </li>
                
                 <li className="mt-4">
                     <a href="#" title="" className="block flex items-center justify-center opacity-75 hover:opacity-100">
-                        <span className="ml-3">Phone (+61 415-512-800 ) </span>
+                        {/* <span className="ml-3">Phone (+61 415-512-800 ) </span> */}
                     </a>
                 </li>
             </ul>
@@ -492,15 +360,13 @@ function App() {
                 title="Pergolas and Patios"
             ></iframe>
         </div>
+        
+                    <a href="#" title="" className="block flex items-center justify-center opacity-100 hover:opacity-100">
+                         <span className="ml-3">Phone (+61 415-512-800 ) </span> 
+                    </a>
+        
     </div>
 </footer>
-
-
-
-
-
-
-
 
 
     </main>
