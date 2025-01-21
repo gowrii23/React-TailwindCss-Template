@@ -144,7 +144,7 @@ function App() {
     </div>
 
    
-    <section id="about" className="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32" >
+    <section id="about" className="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-20" >
       <div className="flex flex-col lg:flex-row lg:-mx-8">
         <div className="w-full lg:w-1/2 lg:px-8">
           <h2 className="text-3xl leading-tight font-bold mt-4">15 year warranty on all workmanship.
@@ -221,7 +221,7 @@ function App() {
     </section>
 
 
-      <section id="gallery" className="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
+      <section id="gallery" className="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-0">
     <div className="">
       <h2 className="text-3xl leading-tight font-bold">Gallery</h2>
       <p className="text-gray-600 mt-2 md:max-w-lg">You’ll be absolutely amazed at the difference we will make to your lifestyle by turning your unused outdoor space into a useable and functional area that your family can use every day.</p>
