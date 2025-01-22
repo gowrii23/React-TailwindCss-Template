@@ -126,21 +126,27 @@ function App() {
 
    
     <div className="">
-      <section className="cover bg-gradient-to-r from-gray-950 to-gray-600  relative  px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
-      items-center min-h-screen">
+          <section className="cover bg-gradient-to-r from-gray-950 to-gray-600  relative  px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center min-h-screen">
         <div className="h-full absolute top-0 left-0 z-0">
-          <img src="images/13.jpg" alt="" className="w-full h-full object-cover opacity-20"/>
+          <img src="images/13.jpg" alt="" className="w-full h-full object-cover opacity-20" />
         </div>
 
         <div className="lg:w-3/4 xl:w-2/4 relative z-10 h-100 lg:mt-16">
           <div>
             <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">PERGOLAS & PATIOS</h1>
-            <p className="text-blue-100 text-xl md:text-2xl leading-snug mt-4">Our price are affordable and all our product are Australian made. We offer a range of pergolas and carport and decks expand your possibilities for entertaining, relaxing, storage or simply, enjoying your garden, and protects you and your property from the elements. </p>
-            <a href="https://web.whatsapp.com/send?phone=61415512800" className="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold">Book
-              Appointment</a>
+            <p className="text-blue-100 text-xl md:text-2xl leading-snug mt-4">
+              Our prices are affordable and all our products are Australian made. We offer a range of pergolas and carports and decks to expand your possibilities for entertaining, relaxing, storage, or simply enjoying your garden, and protecting you and your property from the elements.
+            </p>
+            <button
+              onClick={() => window.open('https://web.whatsapp.com/send?phone=61415512800&text=', '_blank')}
+              className="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold"
+            >
+              Book Appointment
+            </button>
           </div>
         </div>
       </section>
+
     </div>
 
    
