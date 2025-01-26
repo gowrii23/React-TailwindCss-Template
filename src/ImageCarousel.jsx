@@ -70,8 +70,7 @@ const ImageCarousel = () => {
     <section>
        <div className="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-8">
             <h2 className="text-3xl leading-tight font-bold">Reviews by Customer</h2>
-        </div>
-
+        </div>  
 
       <div className="relative w-full overflow-hidden">
         <div className="flex items-center justify-center" id="image-container">
@@ -83,18 +82,24 @@ const ImageCarousel = () => {
             >
               <img src={image.url} alt={image.title} className="mx-auto w-full md:w-auto object-cover" />
               <div className="absolute inset-0 flex items-center justify-between">
-                <button
-                  className="bg-teal-500 text-white px-4 py-2 opacity-50 hover:opacity-75 transition-opacity"
-                  onClick={showPrevImage}
-                >
-                  &lt;
+
+              <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev onClick={showPrevImage} >
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/60 dark:bg-white-800/60 group-hover:bg-teal/50 dark:group-hover:bg-teal-800/100 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-teal-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
                 </button>
-                <button
-                  className="bg-teal-500 text-white px-4 py-2 opacity-50 hover:opacity-75 transition-opacity"
-                  onClick={showNextImage}
-                >
-                  &gt;
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next onClick={showNextImage} >
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/60 dark:bg-white-800/60 group-hover:bg-teal/50 dark:group-hover:bg-teal-800/100 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-teal-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
                 </button>
+              
               </div>
               <div className="p-4 bg-gray-200 text-center">
                 <h2 className="text-lg font-bold">{image.title}</h2>
